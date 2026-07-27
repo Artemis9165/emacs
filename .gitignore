@@ -1,0 +1,9 @@
+eln-cache/
+elpaca/
+themes/
+*~
+\#*\#
+.#*
+*.elc
+org/**/*.el
+org/*.el

@@ -1,0 +1,7 @@
+#+TITLE: Options
+#+AUTHOR: Archemis
+
+* Disable Backups
+#+begin_src emacs-lisp
+(setq make-backup-files nil)
+#+end_src
