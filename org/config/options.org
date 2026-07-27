@@ -26,3 +26,20 @@
   		    :slant 'italic)
   (add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font"))
 #+end_src
+
+* General Defaults
+#+begin_src emacs-lisp
+  (electric-indent-mode -1)
+  (electric-pair-mode 1)
+  (global-auto-revert-mode t)
+  (setq display-line-numbers-type 'visual)
+  (global-display-line-numbers-mode t)
+  (global-visual-line-mode t)
+  (menu-bar-mode -1)
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1)
+  (setq org-edit-src-content-indentation 4)
+  (setq use-file-dialog nil)
+  (setq use-dialog-box nil)
+  (setq pop-up-windows nil)
+#+end_src
