@@ -1,6 +1,30 @@
 #+TITLE:Remaps
 #+AUTHOR:Archemis
 
+* General Keybindings
 #+begin_src emacs-lisp
-
+          (use-package general 
+            :ensure t 
+        	  :demand t
+            :config
+            (general-evil-setup)
+            (defconst leader-def "SPC")
+            (general-create-definer leader
+          			      :states 'normal
+          			      :keymaps 'override
+          			      :prefix leader-def)
+            (leader
+        	 "f" '(:ignore t)
+        	 "f c" '(lambda () (interactive) (dired user-emacs-directory))
+         )
+        (leader
+        	 "r" '(:ignore t)
+        	 "r r" '(lambda () (interactive) (load-file user-init-file))
+         )
+    (leader
+            	 "t" '(:ignore t)
+            "t l" 'display-line-numbers-mode
+    	 "t t" 'visual-line-mode
+    	 "t o" 'org-mode
+        ))
 #+end_src
