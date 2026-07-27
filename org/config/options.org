@@ -5,3 +5,24 @@
 #+begin_src emacs-lisp
 (setq make-backup-files nil)
 #+end_src
+
+* Font
+#+begin_src emacs-lisp
+  (set-face-attribute 'default nil
+  		    :font "JetBrainsMono Nerd Font"
+  		    :height 100
+  		    :weight 'regular)
+  (set-face-attribute 'variable-pitch nil
+  		    :font "Roboto"
+  		    :height 100
+  		    :weight 'regular)
+  (set-face-attribute 'fixed-pitch nil
+  		    :font "JetBrainsMono Nerd Font"
+  		    :height 100
+  		    :weight 'regular)
+  (set-face-attribute 'font-lock-comment-face nil
+  		    :slant 'italic)
+  (set-face-attribute 'font-lock-keyword-face nil
+  		    :slant 'italic)
+  (add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font"))
+#+end_src
