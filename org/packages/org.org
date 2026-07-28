@@ -4,9 +4,10 @@
 * General Org Settings
 #+begin_src emacs-lisp
     (setq org-directory "~/Documents/org/")
+    (require 'org-tempo)
 #+end_src
 
-** Org Header Levels
+** Header Levels
 #+begin_src emacs-lisp
     (custom-set-faces
      '(org-document-title ((t (:height 2.0 :weight bold))))
@@ -36,6 +37,14 @@
  org-agenda-tags-column 0
  org-ellipsis "…")
 
-(global-org-modern-mode)
-)
+(global-org-modern-mode))
 #+end_src
+
+* TOC
+#+begin_src emacs-lisp
+(use-package toc-org 
+:ensure t
+:demand t
+:commands toc-org-enable
+:init (add-hook 'org-mode-hook 'toc-org-enable))
+#+end_src>
