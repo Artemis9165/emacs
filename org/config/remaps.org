@@ -15,6 +15,10 @@
           			      :prefix leader-def)
             (leader
         	 "f" '(:ignore t)
+    	     "f f" 'consult-find
+    	     "f g" 'consult-ripgrep
+    	     "f b" 'consult-buffer
+    	     "f h" 'consult-man
         	 "f c" '(lambda () (interactive) (dired user-emacs-directory))
          )
         (leader
@@ -27,5 +31,7 @@
             "t l" 'display-line-numbers-mode
     	 "t t" 'visual-line-mode
     	 "t o" 'org-mode
+    	 "t m" 'toggle-markdown-view-mode
+    	 "t w" 'writeroom-mode
         ))
 #+end_src

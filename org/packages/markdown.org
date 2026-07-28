@@ -27,3 +27,13 @@
 :demand t)
 
 #+end_src
+
+* Toggle Markdown View
+#+begin_src emacs-lisp
+(defun toggle-markdown-view-mode ()
+  (interactive)
+  (if (eq major-mode 'markdown-view-mode)
+      (markdown-mode)
+    (markdown-view-mode)))
+
+#+end_src
