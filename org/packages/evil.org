@@ -1,10 +1,10 @@
 #+TITLE: Evil
 #+AUTHOR: Archemis
 #+begin_src emacs-lisp
-  (use-package evil :ensure t :demand t
-    :init
-    (setq evil-want-keybinding nil)
-    :config
+        (use-package evil :ensure t :demand t 
+        :init (setq evil-want-keybinding nil) 
+        :config 
+        (evil-set-undo-system 'undo-tree)
     (evil-mode 1))
 #+end_src
 * Collection

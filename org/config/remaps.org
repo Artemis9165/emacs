@@ -20,6 +20,7 @@
         (leader
         	 "r" '(:ignore t)
         	 "r r" '(lambda () (interactive) (load-file user-init-file))
+    	     "r u" 'elpaca-update-all
          )
     (leader
             	 "t" '(:ignore t)

@@ -7,3 +7,4 @@ themes/
 *.elc
 org/**/*.el
 org/*.el
+recentf
