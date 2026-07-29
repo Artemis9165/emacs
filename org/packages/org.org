@@ -24,6 +24,14 @@
 :hook (dired-mode-hook . org-download-enable))
 #+end_src
 
+* Fragtog
+#+begin_src emacs-lisp
+    (use-package org-fragtog
+:ensure t
+:demand t
+:hook (org-mode-hook . org-fragtog-mode))
+#+end_src
+
 * General Org Settings
 #+begin_src emacs-lisp
     (setq org-directory "~/Documents/org/")
@@ -83,6 +91,14 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
+#+end_src
+
+* Transclusion
+#+begin_src emacs-lisp
+    (use-package org-transclusion
+:after org
+:ensure t
+:demand t)
 #+end_src
 
 * TOC

@@ -30,14 +30,17 @@
               	 "t" '(:ignore t)
               "t l" 'display-line-numbers-mode
       	 "t t" 'visual-line-mode
-      	 "t o" 'org-mode
       	 "t m" 'toggle-markdown-view-mode
       	 "t w" 'writeroom-mode
           )
       (leader
         "o" '(:ignore t)
+        "o l" 'org-fragtog-mode
+        "o o" 'org-mode
         "o f" 'org-roam-node-find
         "o i" 'org-roam-node-insert
         "o g" 'org-roam-ui-open
+        "o t" 'org-transclusion-mode
+        "o c" 'org-roam-capture
     ))
 #+end_src
