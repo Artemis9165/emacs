@@ -8,3 +8,6 @@ themes/
 org/**/*.el
 org/*.el
 recentf
+org-roam.db
+transient/
+history

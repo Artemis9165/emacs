@@ -3,7 +3,7 @@
 
 (setq savehist-minibuffer-history-variables '(consult--find-history evil-ex-history minibuffer-history extended-command-history))
 (setq consult--find-history '("#"))
-(setq evil-ex-history '("w" "q" "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w"))
+(setq evil-ex-history '("e ." "w" "q" "w" "q" "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w" "e ." "w"))
 (setq minibuffer-history '("savehist User Declaration"))
 (setq extended-command-history '("elpaca-browse"))
-(setq evil-jumps-history '((548 "~/.config/emacs/org/config/") (181 "~/.config/emacs/org/") (642 "~/.config/emacs/") (111 #4="/home/coding/.config/emacs/org/packages/savehist.org") (2377 #3="~/.config/emacs/org/packages/") (235 #2="~/.config/emacs/org/") (138 #1="~/.config/emacs/org/config/") (1 "/home/coding/.config/emacs/org/config/elpaca.org") (245 #1#) (181 #2#) (142 #3#) (2137 #3#) (65 #4#) (125 #4#) (91 #4#) (84 #4#) (2377 #3#) (133 "/home/coding/.config/emacs/org/packages/marginalia.org")))
+(setq evil-jumps-history '((2706 #1="~/.config/emacs/org/packages/") (689 "/home/coding/.config/emacs/org/packages/markdown.org") (1252 #1#) (235 #2="~/.config/emacs/org/") (653 #3="~/.config/emacs/") (37 "/home/coding/.config/emacs/org/config/elpaca.org") (249 "~/.config/emacs/org/config/") (181 #2#) (653 #3#) (140 "~/.config/emacs/org/config/") (181 "~/.config/emacs/org/") (653 "~/.config/emacs/") (548 "~/.config/emacs/org/config/") (181 "~/.config/emacs/org/") (642 "~/.config/emacs/") (111 #7="/home/coding/.config/emacs/org/packages/savehist.org") (2377 #6="~/.config/emacs/org/packages/") (235 #5="~/.config/emacs/org/") (138 #4="~/.config/emacs/org/config/") (1 "/home/coding/.config/emacs/org/config/elpaca.org") (245 #4#) (181 #5#) (142 #6#) (2137 #6#) (65 #7#) (125 #7#) (91 #7#) (84 #7#) (2377 #6#) (133 "/home/coding/.config/emacs/org/packages/marginalia.org")))
