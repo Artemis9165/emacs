@@ -6,6 +6,7 @@
     (use-package pdf-tools
       :ensure t
       :demand t
+      :config (pdf-tools-install)
       :mode ("\\.pdf\\'" . pdf-view-mode))
 #+end_src
 
