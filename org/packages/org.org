@@ -1,6 +1,21 @@
 #+TITLE: ORG
 #+AUTHOR: Archemis
 
+* Cliplink
+#+begin_src emacs-lisp
+    (use-package org-cliplink
+:ensure t
+:demand t)
+#+end_src
+
+* Download
+#+begin_src emacs-lisp
+    (use-package org-download
+:ensure t
+:demand t
+:hook (dired-mode-hook . org-download-enable))
+#+end_src
+
 * General Org Settings
 #+begin_src emacs-lisp
     (setq org-directory "~/Documents/org/")
@@ -42,9 +57,9 @@
 
 * TOC
 #+begin_src emacs-lisp
-(use-package toc-org 
-:ensure t
-:demand t
-:commands toc-org-enable
-:init (add-hook 'org-mode-hook 'toc-org-enable))
-#+end_src>
+    (use-package toc-org 
+    :ensure t
+    :demand t
+    :commands toc-org-enable
+    :hook (org-mode-hook . toc-org-enable))
+#+end_src
