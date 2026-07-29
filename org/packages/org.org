@@ -45,22 +45,44 @@
 
 * Modern
 #+begin_src emacs-lisp
-        (use-package org-modern
-          :ensure t
-          :demand t
-          :config
-(setq
- org-auto-align-tags nil
- org-tags-column 0
- org-catch-invisible-edits 'show-and-error
- org-special-ctrl-a/e t
- org-insert-heading-respect-content t
- org-hide-emphasis-markers t
- org-pretty-entities t
- org-agenda-tags-column 0
- org-ellipsis "…")
+            (use-package org-modern
+              :ensure t
+              :demand t
+              :config
+    (setq
+     org-auto-align-tags nil
+     org-tags-column 0
+     org-catch-invisible-edits 'show-and-error
+     org-special-ctrl-a/e t
+     org-insert-heading-respect-content t
+     org-hide-emphasis-markers t
+     org-pretty-entities t
+     org-agenda-tags-column 0
+     org-ellipsis "…")
 
-(global-org-modern-mode))
+    (global-org-modern-mode))
+#+end_src
+
+* Roam
+#+begin_src emacs-lisp
+    (use-package org-roam
+:ensure t
+:demand t
+:custom (org-roam-directory (file-truename "~/Documents/org/roam"))
+:config (org-roam-db-autosync-mode))
+#+end_src
+
+** UI
+#+begin_src emacs-lisp
+    (use-package org-roam-ui
+    :after org-roam
+    :ensure t
+    :demand t
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t))
 #+end_src
 
 * TOC
