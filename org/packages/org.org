@@ -1,6 +1,14 @@
 #+TITLE: ORG
 #+AUTHOR: Archemis
 
+* Appear
+#+begin_src emacs-lisp
+    (use-package org-appear
+:ensure t
+:demand t
+:hook (org-mode-hook . org-appear-mode))
+#+end_src
+
 * Cliplink
 #+begin_src emacs-lisp
     (use-package org-cliplink
